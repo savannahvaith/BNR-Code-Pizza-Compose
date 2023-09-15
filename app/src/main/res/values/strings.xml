@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Code Pizza</string>
+
+    <string name="place_order_button">Place Order</string>
+
+    <string name="placement_none">None</string>
+    <string name="placement_left">Left Half</string>
+    <string name="placement_right">Right Half</string>
+    <string name="placement_all">Whole Pizza</string>
+
+    <string name="topping_basil">Basil</string>
+    <string name="topping_mushrooms">Mushrooms</string>
+    <string name="topping_olive">Olives</string>
+    <string name="topping_peppers">Peppers</string>
+    <string name="topping_pepperoni">Pepperoni</string>
+    <string name="topping_pineapple">Pineapple</string>
 </resources>
