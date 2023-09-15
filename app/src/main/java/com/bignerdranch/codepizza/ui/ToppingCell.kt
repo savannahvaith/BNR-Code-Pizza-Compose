@@ -1,5 +1,6 @@
 import Topping.*
 import ToppingPlacement.*
+import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -25,6 +26,7 @@ fun ToppingCell(
     modifier: Modifier = Modifier, // when added here, the children don't need to instantiate
     onClickTopping: () -> Unit
 ) {
+    Log.d("ToppingCell", "Called ToppingCell for $topping")
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = modifier // uses modifier from ToppingCell
@@ -34,7 +36,7 @@ fun ToppingCell(
                 horizontal = 16.dp
             )
     ) {
-        Checkbox(checked = (placement != null), onCheckedChange = { /* TODO */ })
+        Checkbox(checked = (placement != null), onCheckedChange = { onClickTopping() })
         Column(modifier = modifier
             .weight(1f, fill = true) // On click the entire row is highlighted.
         ) {
